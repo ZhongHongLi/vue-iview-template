@@ -12,10 +12,10 @@
       default-leaf-node-name="new leaf"
       :default-expanded="false"
     >
-      <span class="icon" slot="addTreeNodeIcon">📂</span>
-      <span class="icon" slot="addLeafNodeIcon">＋</span>
-      <span class="icon" slot="editNodeIcon">📃</span>
-      <span class="icon" slot="delNodeIcon">✂️</span>
+      <span class="icon" slot="addTreeNodeIcon"  >📂</span>
+      <span class="icon" slot="addLeafNodeIcon" >＋</span>
+      <span class="icon" slot="editNodeIcon" >📃</span>
+      <span class="icon" slot="delNodeIcon" >✂️</span>
       <!-- 子节点前面的图标 -->
       <span class="icon flex" slot="leafNodeIcon">
         🍃
@@ -47,11 +47,11 @@ export default {
           name: "列表1",
           id: 1,
           pid: 0,
-          dragDisabled: true,
-          addTreeNodeDisabled: true,
-          addLeafNodeDisabled: true,
-          editNodeDisabled: true,
-          delNodeDisabled: true,
+          // dragDisabled: true,
+          // addTreeNodeDisabled: true,
+          // addLeafNodeDisabled: true,
+          // editNodeDisabled: true,
+          // delNodeDisabled: true,
           children: [
             {
               name: "Node 1-2",
@@ -65,12 +65,16 @@ export default {
           name: "列表2",
           id: 4,
           pid: 0,
-          disabled: true,
-          dragDisabled: true,
-          addTreeNodeDisabled: true,
-          addLeafNodeDisabled: true,
-          editNodeDisabled: true,
-          delNodeDisabled: true,
+          // disabled: true,
+          // dragDisabled: true,
+          //添加文件的
+          // addTreeNodeDisabled: true,
+          //+
+          // addLeafNodeDisabled: true,
+          //修改的图标
+          // editNodeDisabled: true,
+          //删除的图标
+          // delNodeDisabled: true,
           children: [
             {
               name: "我是node2下面的子节点",
@@ -97,11 +101,11 @@ export default {
           name: "列表4",
           id: 6,
           pid: 0,
-          dragDisabled: true,
-          addTreeNodeDisabled: true,
-          addLeafNodeDisabled: true,
-          editNodeDisabled: true,
-          delNodeDisabled: true,
+          // dragDisabled: true,
+          // addTreeNodeDisabled: true,
+          // addLeafNodeDisabled: true,
+          // editNodeDisabled: true,
+          // delNodeDisabled: true,
           children: [
             {
               name: "Node 1-2",
@@ -115,7 +119,8 @@ export default {
           name: "列表五",
           id: 8,
           pid: 0,
-          disabled: true,
+          //禁用
+          // disabled: true,
           children: [
             {
               name: "Node 1-2",
@@ -147,13 +152,18 @@ export default {
       console.log(node);
       node.remove();
     },
+    //修改
     onChangeName(params) {
       console.log(params);
     },
+    //追加父节点下面的子节点
     onAddNode(params) {
       console.log(params);
     },
-
+    addChildren(params){
+     console.log(111)
+     console.log(params)
+    },
     onClick(params) {
       console.log(params);
     //   arr.push(...params.name)

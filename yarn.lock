@@ -5277,6 +5277,14 @@ iview-area@^1.5.17:
     iview "^3.0.0"
     vue "^2.5.17"
 
+iview-edit-table@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/iview-edit-table/-/iview-edit-table-1.0.0.tgz#2bcd527dd0f7d495369fb46def0965c266b093c2"
+  integrity sha512-ExguJRrg6k07wCYR1iKb+hkEr5ZGrXe4MDonZFFTOgxWOF6qusOStWXPqDPAgTrfbXZoV/PaIqI332gnhqRnSg==
+  dependencies:
+    core-js "^2.6.5"
+    vue "^2.6.10"
+
 iview@^3.0.0, iview@^3.1.5, iview@^3.2.2:
   version "3.5.4"
   resolved "https://registry.npm.taobao.org/iview/download/iview-3.5.4.tgz#d516b92e73b617f2dc7f45831f99059d69932f82"
@@ -9305,7 +9313,7 @@ vue-tree-list@^1.4.4:
   resolved "https://registry.npm.taobao.org/vue-tree-list/download/vue-tree-list-1.4.4.tgz#bbd1efd97a4cac582aa2908461574d914f5625fa"
   integrity sha1-u9Hv2XpMrFgqopCEYVdNkU9WJfo=
 
-vue@^2.5.10, vue@^2.5.17:
+vue@^2.5.10, vue@^2.5.17, vue@^2.6.10:
   version "2.6.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=

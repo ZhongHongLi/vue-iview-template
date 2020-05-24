@@ -9,9 +9,18 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     //
+    isshow:false,
+    addisshow:false
   },
   mutations: {
     //
+    addshow(state,boolean){
+      state.isshow=boolean
+    },
+    addnewshow(state,boolean){
+      state.addisshow=boolean
+    }
+
   },
   actions: {
     //

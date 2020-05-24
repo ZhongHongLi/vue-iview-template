@@ -300,6 +300,15 @@ export default [
           title: 'tree数装结构1'
         },
         component: () => import('@/view/vue-tree/vurTree-two.vue')
+      },
+      {
+        path: 'tablecheckbox',
+        name: 'tablecheckbox',
+        meta: {
+          icon: 'md-add',
+          title: '表格'
+        },
+        component: () => import('@/view/vue-tree/tableChecbox.vue')
       }
     ]
   },
@@ -491,7 +500,24 @@ export default [
       }
     ]
   },
-  
+  {
+    path: '/argu1',
+    name: 'argu1',
+    meta: {
+      hideInMenu: true
+    },
+    component: Main,
+   children:[
+    {
+      path:'handadd/:id',
+      name:'新建',
+      meta:{
+        title:'新建'
+      },
+      component:() => import('@/view/vue-tree/handAdd.vue')
+    }
+   ]
+  },
   {
     path: '/401',
     name: 'error_401',
