@@ -114,6 +114,7 @@ export default {
             //   obj.children = [];
             //   obj.loading = false;
             // }
+            // if(item.children==undefined||item.children.length<0) return
             obj.children=this.getTree(item.children)
             arr.push(obj);
           });
